@@ -48,8 +48,9 @@ endif
 ifeq ($(strip $(NKRO_ENABLE)), yes)
     ifeq ($(PROTOCOL), VUSB)
         $(info NKRO is not currently supported on V-USB, and has been disabled.)
-    else ifeq ($(strip $(BLUETOOTH_ENABLE)), yes)
-        $(info NKRO is not currently supported with Bluetooth, and has been disabled.)
+# K8 Pro supports NKRO over Bluetooth.
+#    else ifeq ($(strip $(BLUETOOTH_ENABLE)), yes)
+#        $(info NKRO is not currently supported with Bluetooth, and has been disabled.)
     else
         TMK_COMMON_DEFS += -DNKRO_ENABLE
         SHARED_EP_ENABLE = yes

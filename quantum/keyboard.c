@@ -269,7 +269,10 @@ __attribute__((weak)) void keyboard_post_init_kb(void) {
 void keyboard_setup(void) {
     print_set_sendchar(sendchar);
 #ifdef EEPROM_DRIVER
-    eeprom_driver_init();
+    if (!eeprom_driver_init()) {
+        eeconfig_init();
+        eeprom_driver_init();
+    }
 #endif
 #ifdef VIAL_ENABLE
     vial_init();
