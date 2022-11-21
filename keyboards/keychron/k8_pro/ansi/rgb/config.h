@@ -55,31 +55,19 @@
 #    define ENABLE_RGB_MATRIX_CYCLE_SPIRAL
 #    define ENABLE_RGB_MATRIX_DUAL_BEACON
 #    define ENABLE_RGB_MATRIX_RAINBOW_BEACON
-#    define ENABLE_RGB_MATRIX_JELLYBEAN_RAINDROPS
-#    define ENABLE_RGB_MATRIX_PIXEL_RAIN
+//#    define ENABLE_RGB_MATRIX_JELLYBEAN_RAINDROPS
+//#    define ENABLE_RGB_MATRIX_PIXEL_RAIN
 
 /* enabled only if RGB_MATRIX_FRAMEBUFFER_EFFECTS is defined */
 #    define ENABLE_RGB_MATRIX_TYPING_HEATMAP
-#    define ENABLE_RGB_MATRIX_DIGITAL_RAIN
+//#    define ENABLE_RGB_MATRIX_DIGITAL_RAIN
 
 /*  enabled only of RGB_MATRIX_KEYPRESSES or RGB_MATRIX_KEYRELEASES is defined*/
 #    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
-#    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTIWIDE
+#//    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTIWIDE
 #    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTINEXUS
 #    define ENABLE_RGB_MATRIX_SPLASH
 #    define ENABLE_RGB_MATRIX_SOLID_SPLASH
-#define    ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE   // Pulses keys hit to hue & value then fades value out
-#define    ENABLE_RGB_MATRIX_SOLID_REACTIVE      // Static single hue, pulses keys hit to shifted hue then fades to current hue
-#define    ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE       // Hue & value pulse near a single key hit then fades value out
-#define    ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTIWIDE  // Hue & value pulse near multiple key hits then fades value out
-#define    ENABLE_RGB_MATRIX_SOLID_REACTIVE_CROSS      // Hue & value pulse the same column and row of a single key hit then fades value out
-#define    ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTICROSS // Hue & value pulse the same column and row of multiple key hits then fades value out
-#define    ENABLE_RGB_MATRIX_SOLID_REACTIVE_NEXUS      // Hue & value pulse away on the same column and row of a single key hit then fades value out
-#define    ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTINEXUS // Hue & value pulse away on the same column and row of multiple key hits then fades value out
-#define    ENABLE_RGB_MATRIX_SPLASH              // Full gradient & value pulse away from a single key hit then fades value out
-#define    ENABLE_RGB_MATRIX_MULTISPLASH         // Full gradient & value pulse away from multiple key hits then fades value out
-#define    ENABLE_RGB_MATRIX_SOLID_SPLASH        // Hue & value pulse away from a single key hit then fades value out
-#define    ENABLE_RGB_MATRIX_SOLID_MULTISPLASH   // Hue & value pulse away from multiple key hits then fades value out
 
 /* Set LED driver current */
 #define CKLED2001_CURRENT_TUNE   {0x38, 0x38, 0x38, 0x38, 0x38, 0x38, 0x38, 0x38, 0x38, 0x38, 0x38, 0x38}
